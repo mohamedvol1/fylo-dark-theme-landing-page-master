@@ -288,7 +288,9 @@ body,html {
     /*margin-bottom: 100px;*/
 
 }
-
+.su-background{
+    background: linear-gradient(180deg, rgba(24,31,42,1) 50%, rgba(11,21,35,1) 50%);
+}
 .sign-up-box {
     background-color: hsl(217, 28%, 15%);
     max-width: 60%;
@@ -296,7 +298,8 @@ body,html {
     /*padding: 40px 80px 40px 80px;*/
     padding-top: 40px;
     padding-bottom: 40px;
-    margin-bottom: 100px;
+    margin-top: 200px;
+    /*margin-bottom: 100px;*/
     border-radius: 5px;
     box-shadow: 5px 4px #1f2126;
    
@@ -433,7 +436,10 @@ body,html {
     padding-top: 5px;
     padding-bottom: 10px;
 }
-
+.buffer {
+    height: 100px;
+    background-color: hsl(216, 53%, 9%);
+}
 
 /***********************************************************************
  * contacts
@@ -449,6 +455,9 @@ body,html {
  /*.footer-logo-grid {
     grid-column-start: span 4;
  }*/
+ .contacts-background {
+    background-color: hsl(216, 53%, 9%);
+ }
  .contacts {
    width: 91%;
  }
@@ -499,6 +508,14 @@ table{
     float: left;
     margin-right: 10px;
 }
+
+/***********************************************************************
+ *  footer
+ **********************************************************************/
+footer {
+    background-color: hsl(216, 53%, 9%);
+}
+
 
 /***********************************************************************
  *  green Background
