@@ -27,6 +27,7 @@ body,html {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    background-color: hsl(217, 28%, 15%);
 }
 .nav-font {
     font-size: 14px;
@@ -36,7 +37,10 @@ body,html {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: hsl(218, 28%, 13%);
+    /*background-color: hsl(218, 28%, 13%);*/
+    /*background-color: red;*/
+    background: linear-gradient(180deg, rgba(28,36,49,1) 50%, rgba(24,31,42,1) 50%);
+    
 }
 
 .dimension {
@@ -76,6 +80,7 @@ body,html {
     border-radius: 300px;
     color: hsl(0, 0%, 100%);
     background-color: hsl(198, 60%, 50%);
+    margin-bottom: 200px;
 }
 .button:hover {
     background-color: hsl(176, 68%, 64%);
@@ -87,17 +92,43 @@ body,html {
     font-weight: 700;
 }
 
-/*.wave-svg {
+.wave-svg {
     
     width: 100%;
-    background: url(./images/bg-curvy-desktop.svg) center center/cover;
-    height: 0;
-    padding: 0;
-    padding-bottom: 31.7%
-*/
-
-    
+    background: url(./images/bg-curvy-desktop.svg) no-repeat center center/cover;
+   /* position: relative;
+    top: 200px;*/
+    /*display: block;
+    background-size: cover;
+    margin: auto;*/    
 }
+
+@media only screen and (max-width: 550px) {
+   .wave-svg {
+        width: 100%;
+        background: url(./images/bg-curvy-mobile.svg) no-repeat center center/cover;
+   } 
+   .gs-background {
+        background-color: hsl(218, 28%, 13%);
+
+   }
+   .flex-wrapper {
+        background: linear-gradient(180deg, rgba(28,36,49,1) 16%, rgba(24,31,42,1) 16%);
+   }
+}
+
+/*.wave-svg::before {
+    content : "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: blue;
+    top:  0;
+    left: 0;
+    position: absolute;
+    z-index: 10;
+    opacity: 1;
+}*/
 
 .buffer {
     height: 100px;
@@ -113,8 +144,30 @@ body,html {
     max-width: 80%;
 }*/
 
+.features-margins {
+    margin-right: 12%;
+    margin-left: 12%;
+}
+@media only screen and (max-width: 375px) {
+
+/***********************centerin the grid area for phone screen*************************************************************/
+    .features-margins {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    /***********************positioning d-img*************************************************************/    
+ /*   .d-img {
+        float: left: ;
+    }*/
+/***********************sign-up box layout*************************************************************/    
+
+
+
+}
+
 .grid-area {
     width: 100%;
+    background-color: hsl(218, 28%, 13%);;
  /*   margin-top: 200px;
     margin-bottom: 0px;
     padding-bottom: 0px;*/
@@ -125,7 +178,7 @@ body,html {
     grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
     
     max-width: 75%;
-    margin-top: 200px;
+    /*margin-top: 200px;*/
     margin-bottom: 100px;
     /*padding-left: 10%;
     padding-right: 10%;*/
@@ -304,6 +357,11 @@ body,html {
     box-shadow: 5px 4px #1f2126;
    
 }
+@media only screen and (max-width: 503px) {
+    .sign-up-box {
+        max-width: 90%;
+    }
+}
 
 .su-header {
     font-family: Raleway;
@@ -390,6 +448,17 @@ body,html {
     font-size: 11px;
     padding-left: 15px;
 }
+}
+
+@media only screen and (max-width: 503px) {
+    .input-area {
+        grid-template-columns: 1fr;
+    }
+
+    /*button font size*/
+    .signup-button {
+        font-size: 17px;
+    }
 }
 
 /***********************************************************************
@@ -482,6 +551,25 @@ body,html {
 table{   
     width: 100%;
 }
+.lists {
+    display: none;
+}
+
+@media only screen and (max-width: 550px) {
+    table {
+        display: none;
+    }
+
+    .list-spacing {
+        padding-bottom: 30PX;
+    }
+
+    .lists {
+        display: block;
+    }
+
+}
+
 /*.l-i-area {
      height: 100%;
      width: 20px;
