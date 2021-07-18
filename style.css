@@ -371,7 +371,7 @@ body,html {
     box-shadow: 5px 4px #1f2126;
    
 }
-@media only screen and (max-width: 375x) {
+@media only screen and (max-width: 375px) {
     .sign-up-box {
         max-width: 90%;
     }
