@@ -371,11 +371,11 @@ body,html {
     box-shadow: 5px 4px #1f2126;
    
 }
-@media only screen and (max-width: 375px) {
+/*@media only screen and (max-width: 600px) {
     .sign-up-box {
-        max-width: 95%;
+        max-width: 90%;
     }
-}
+}*/
 
 .su-header {
     font-family: Raleway;
@@ -465,6 +465,9 @@ body,html {
 }
 
 @media only screen and (max-width: 375px) {
+    .sign-up-box {
+        max-width: 90%;
+    }    
     .input-area {
         grid-template-columns: 1fr;
     }
